@@ -42,7 +42,7 @@ const SingleServiceDetails = () => {
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.4 }}
-      className="max-w-4xl mx-auto p-2 mb-24 sm:p-6 border rounded-2xl"
+      className="max-w-4xl mx-auto p-2 mb-24 sm:p-6 border border-gray-300 rounded-2xl"
     >
       <div className="flex items-center space-x-4 mb-6">
         <div>
