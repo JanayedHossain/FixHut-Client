@@ -3,11 +3,9 @@ import { useNavigate, useParams } from "react-router";
 import bookingAnimation from "../../assets/booking.json";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
-
 import { toast } from "react-toastify";
 import useAxiousSecure from "../../hooks/useAxiousSecure";
 import Loading from "../loading/Loading";
-import NotFound from "../not-found/NotFound";
 import Empty from "../empty/Empty";
 
 const Booking = () => {
@@ -73,7 +71,7 @@ const [loading,setLoading]=useState(true)
           toast.error("Booking was not successful. Please try again.");
         }
       })
-      .catch((err) => {
+      .catch(() => {
         toast.error("Something Went Wrong. Please Try Again");
       });
   };

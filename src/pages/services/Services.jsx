@@ -36,14 +36,14 @@ const Services = () => {
           <input
             type="text"
             placeholder="Search services..."
-            className="outline-none border py-2 px-3 border-gray-400 rounded-lg text-xs sm:text-sm w-full"
+            className="outline-none border py-2 px-3 border-gray-300 rounded-lg text-xs sm:text-sm w-full"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
         </div>
         <div>
           <select
-            className="outline-none border py-2 px-3 border-gray-400 rounded-lg text-xs sm:text-sm w-full"
+            className="outline-none border py-2 px-3 border-gray-300 rounded-lg text-xs sm:text-sm w-full"
             value={sortOption}
             onChange={(e) => setSortOption(e.target.value)}
           >
@@ -58,7 +58,7 @@ const Services = () => {
       {filteredServices?.map((service) => (
         <motion.div
           key={service?._id}
-          className="p-6 border border-gray-200 rounded-3xl my-14 grid md:grid-cols-3 items-center"
+          className="p-6 border border-gray-200 rounded-3xl my-14 grid md:grid-cols-3 items-center hover:border-primary hover:shadow-lg shadow duration-300"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.2 }}
