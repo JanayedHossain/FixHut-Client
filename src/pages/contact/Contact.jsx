@@ -62,7 +62,7 @@ const Contact = () => {
           />
           <textarea
             placeholder="Your message..."
-            className="textarea textarea-bordered w-full h-32"
+            className="textarea textarea-bordered w-full h-32 resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
