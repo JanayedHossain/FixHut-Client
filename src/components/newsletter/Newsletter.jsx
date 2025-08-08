@@ -39,13 +39,13 @@ const Newsletter = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="input input-bordered w-full sm:w-auto text-secondary"
+            className=" w-full md:min-w-lg sm:w-auto bg-transparent border-transparent border-b border-b-white p-2 placeholder:text-gray-50 outline-none text-gray-50"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <button
             type="submit"
-            className="btn btn-neutral text-white hover:bg-white hover:text-primary transition"
+            className="btn btn-sm md:btn-md btn-neutral text-white hover:bg-transparent hover:text-white transition"
           >
             Subscribe
           </button>
