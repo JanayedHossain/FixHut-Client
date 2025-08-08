@@ -1,3 +1,7 @@
+![FixHut Screenshot](https://i.postimg.cc/Zn0RRHTG/Screenshot-233.png)
+
+---
+
 # FixHut 🛠️
 
 **Selected Service Category:** Home Repair Services 🔧
@@ -11,6 +15,7 @@
 FixHut is a service-sharing web application designed to allow users to add, update, and delete their own services, browse services shared by others, book services, and manage the status of booked services. The platform focuses on a user-friendly experience with features for service management, booking, and real-time status updates.
 
 ---
+
 ## Features ✨
 
 - **User Authentication** 🔐: Email/password login and Google social login with JWT token-based authentication for secure access.
@@ -52,12 +57,23 @@ FixHut is a service-sharing web application designed to allow users to add, upda
 
 ---
 
+## 🛠️ Run Locally
 
-## Run Locally
-
-Clone the project
+Follow these steps to set up **Fixhut** on your local machine:
 
 ```bash
-git clone https://github.com/JanayedHossain/fixhut.git
+# 1️⃣ Clone the repository
+git clone https://github.com/JanayedHossain/FixHut-Client.git
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Create a .env file in the root directory and add your environment variables
+VITE_API_KEY=your_api_key
+VITE_API_URL=your_api_url
+
+
+# 4️⃣ Start the development server
+npm run dev
 
 ```
