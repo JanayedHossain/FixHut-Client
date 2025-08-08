@@ -1,4 +1,4 @@
-![FixHut Screenshot](https://i.postimg.cc/Zn0RRHTG/Screenshot-233.png)
+![FixHut Screenshot](https://i.ibb.co.com/B8CbKw8/Screenshot-254.png)
 
 ---
 
