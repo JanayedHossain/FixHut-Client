@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import updateAnimation from "../../assets/update.json";
 import { AuthContext } from "../../provider/AuthProvider";
-import { Navigate,  useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { toast } from "react-toastify";
 import useAxiousSecure from "../../hooks/useAxiousSecure";
 import Loading from "../loading/Loading";

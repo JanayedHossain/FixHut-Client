@@ -59,56 +59,6 @@ const ManageServices = ({ fetchPromiseData }) => {
       <p className="text-center mb-12 text-xs md:text-sm text-secondary pt-2">
         Easily update or delete the services you’ve added in your account.
       </p>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {myServices.map((service) => (
-          <motion.div
-            key={service._id}
-            className="shadow-md rounded-xl overflow-hidden flex flex-col p-4 border border-gray-300"
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-          >
-            <img
-              src={service.image}
-              alt={service.title}
-              className="h-48 w-full object-cover rounded-lg"
-            />
-            <div className="p-4 flex flex-col flex-1">
-              <div className="flex-1">
-                <Link
-                  to={`/services/${service?._id}`}
-                  className="text-xl font-semibold text-primary"
-                >
-                  {service.title}
-                </Link>
-                <p className="my-3">
-                  <span className="font-medium">Price:</span> ৳ {service.price}
-                </p>
-                <p className="text-sm sm:text-base">
-                  {service?.description.length > 100
-                    ? service.description.slice(0, 100) + "..."
-                    : service?.description}
-                </p>
-              </div>
-
-              <div className="flex justify-between mt-6">
-                <Link to={`/edit-service/${service?._id}`}>
-                  <button className="btn btn-sm btn-info hover:btn-outline hover:bg-transparent hover:text-info">
-                    Edit
-                  </button>
-                </Link>
-                <button
-                  className="btn btn-sm btn-error hover:btn-outline hover:bg-transparent hover:text-error"
-                  onClick={() => handleDelete(service?._id)}
-                >
-                  Delete
-                </button>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div> */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1}}

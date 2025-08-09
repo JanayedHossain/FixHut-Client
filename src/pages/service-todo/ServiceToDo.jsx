@@ -44,61 +44,6 @@ const ServiceToDo = ({ fetchPromiseData }) => {
       <p className="text-center mb-12 text-xs md:text-sm text-secondary pt-2">
         Manage and update the status of services booked from you by others.
       </p>
-      {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {bookedServices.map((service) => (
-          <motion.div
-            key={service._id}
-            className="card bg-base-100 shadow-xl hover:shadow-2xl transition-shadow duration-300 p-4 rounded-2xl border border-gray-300"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: false, amount: 0.3 }}
-          >
-            <figure>
-              <img
-                src={service.serviceImage}
-                alt={service.serviceName}
-                className="w-full h-52 object-cover rounded-xl"
-              />
-            </figure>
-            <div className="mt-4 space-y-2">
-              <Link
-                to={`/services/${service?.serviceId}`}
-                className="text-xl font-semibold text-primary"
-              >
-                {service.serviceName}
-              </Link>
-              <p>
-                <span className="font-semibold">Customer:</span>{" "}
-                {service.userName}
-              </p>
-              <p>
-                <span className="font-semibold">Price:</span> ৳ {service.price}
-              </p>
-              <p>
-                <span className="font-semibold">Booking Date:</span>{" "}
-                {service.serviceTakingDate}
-              </p>
-              <p>
-                <span className="font-semibold">Instruction:</span>{" "}
-                {service.specialInstruction}
-              </p>
-              <div className="flex items-center justify-between mt-4">
-                <span className="font-semibold">Status:</span>
-                <select
-                  className="select select-bordered w-1/2"
-                  onChange={(e) => handleChange(e, service?._id)}
-                  defaultValue={service.status}
-                >
-                  <option value="pending">Pending</option>
-                  <option value="working">Working</option>
-                  <option value="completed">Completed</option>
-                </select>
-              </div>
-            </div>
-          </motion.div>
-        ))}
-      </div> */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

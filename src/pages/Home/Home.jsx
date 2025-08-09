@@ -7,7 +7,6 @@ import Loading from "../loading/Loading";
 import FAQ from "../../components/faq/FAQ";
 import Newsletter from "../../components/newsletter/Newsletter";
 
-
 const Home = () => {
   const navigation = useNavigation();
   const isNavigating = Boolean(navigation.location);
@@ -41,7 +40,7 @@ const Home = () => {
       <Hero />
       <PopularServices services={services} />
       <HowItWorks />
-      <Newsletter/>
+      <Newsletter />
       <FAQ />
     </div>
   );

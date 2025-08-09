@@ -79,7 +79,9 @@ const SingleServiceDetails = () => {
         </h2>
         <p className="text-secondary mb-4">{service.description}</p>
 
-        <p className="text-right py-2 font-semibold text-lg">৳ {service.price}</p>
+        <p className="text-right py-2 font-semibold text-lg">
+          ৳ {service.price}
+        </p>
 
         <Link to={`/booking/${service?._id}`}>
           <button className="btn hover:btn-outline hover:bg-transparent hover:text-primary btn-primary px-6 py-2 rounded">
