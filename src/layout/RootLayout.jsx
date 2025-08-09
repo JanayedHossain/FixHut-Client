@@ -6,14 +6,13 @@ import Toggle from "../components/toggle/Toggle";
 const RootLayout = () => {
   return (
     <>
-    
-    <div className="max-w-[1920px] mx-auto">
-      <Navbar />
-<Toggle/>
-      <div className="max-w-[95%] mx-auto pt-24">
-        <Outlet />
+      <div className="max-w-[1920px] mx-auto">
+        <Navbar />
+        <Toggle />
+        <div className="max-w-[95%] mx-auto pt-24">
+          <Outlet />
+        </div>
       </div>
-    </div>
       <Footer />
     </>
   );
